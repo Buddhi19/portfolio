@@ -20,7 +20,7 @@
   align-self: center;
   flex-wrap: wrap;
   row-gap: 40px;
-  max-width: 26ch;
+  max-width: 86ch;
 }
 
 hr {  
@@ -42,6 +42,6 @@ hr {
   }
 
   hr {
-    width: 300px;
+    width: 500px;
   }
 }

@@ -23,7 +23,7 @@ function Skills() {
       </div>
       <hr />
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="Aultium" />
+        <SkillList src={checkMarkIcon} skill="Altium" />
         <SkillList src={checkMarkIcon} skill="Webots" />
         <SkillList src={checkMarkIcon} skill="AutoCad" />
         <SkillList src={checkMarkIcon} skill="React" />
