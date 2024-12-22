@@ -1,0 +1,23 @@
+.youtube-card {
+  text-align: center;
+  margin: 0px;
+  transition: transform 200ms ease-in-out;
+  border: none;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; /* Adjust the value for more or less rounding */
+  border: none;
+}
+
+.video-container iframe {
+  border: none;
+  border-radius: 45px;
+}
+
+.youtube-card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); Add shadow effect */
+}

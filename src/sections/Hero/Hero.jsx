@@ -1,4 +1,5 @@
 import styles from './HeroStyles.module.css';
+import FallingStars from './FallingStars';
 import heroImg from '../../assets/dp.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
@@ -21,6 +22,7 @@ function Hero() {
 
   return (
     <section id="hero" className={styles.container}>
+      <FallingStars theme={theme}/>
       <div className={styles.colorModeContainer}>
         <img
           src={heroImg}
@@ -56,10 +58,9 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-        Passionate third-year Electrical and Electronic Engineering student,
-        interested in AI, ML and Communication Systems with a strong background in programming.
+        A Passionate Final Year Electrical and Electronic Engineering Undergraduate.
         </p>
-        <a href={CV} download>
+        <a href={CV} view>
           <button className="hover">Resume</button>
         </a>
       </div>
