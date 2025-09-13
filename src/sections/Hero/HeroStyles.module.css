@@ -79,9 +79,11 @@
 }
 
 .description {
-  max-width: 48ch;
+  max-width: 60ch;
   position: relative; /* Added */
   z-index: 2; /* Added */
+  /* font size: 5 */
+  font-size: x-large;
 }
 
 .info {

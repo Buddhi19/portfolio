@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css';
-import FallingStars from './FallingStars';
+// import FallingStars from './FallingStars';
 import heroImg from '../../assets/dp.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
@@ -22,7 +22,7 @@ function Hero() {
 
   return (
     <section id="hero" className={styles.container}>
-      <FallingStars theme={theme}/>
+      {/* <FallingStars theme={theme}/> */}
       <div className={styles.colorModeContainer}>
         <img
           src={heroImg}
@@ -39,12 +39,9 @@ function Hero() {
       <div className={styles.info}>
         <h1>
           Buddhi
-          <br />
           Wijenayake
         </h1>
-        <h2>Electrical and electronic
-          <br />
-          engineering student
+        <h2>Electrical and electronic engineering student
         </h2>
         <span>
           <a href="https://twitter.com/Buddhi1100" target="_blank">
@@ -58,7 +55,11 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-        A Passionate Final Year Electrical and Electronic Engineering Undergraduate.
+        I am a final year Electrical and Electronic Engineering student at the <a href="https://eng.pdn.ac.lk/" target="_blank" style={{color: 'blue', textDecoration: 'none'}}> University of Peradeniya</a>, Sri Lanka.
+        <br/>
+        <br/>
+        <br/>
+        My research interests include Computer Vision, Remote Sensing, Signal Processing, and Deep Learning, with a focus on Semantic Change Detection and data-driven approaches for real-world applications.   
         </p>
         <a href={CV} view>
           <button className="hover">Resume</button>

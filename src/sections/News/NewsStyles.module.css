@@ -1,0 +1,131 @@
+/* Match your Work section’s wrapper */
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem 1rem;
+
+  img { width: 20px; }
+}
+
+/* Vertical list (stacked) */
+.newsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  width: 80%;
+  max-width: 86ch;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  text-align: left;
+}
+
+.item { margin: 0; }
+
+/* Theme tokens (safe fallbacks) */
+:root {
+  --news-fg: #1a1a1a;
+  --news-accent: #2563eb;
+  --news-muted: 0.7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --news-fg: #f5f7ff;
+    --news-accent: #60a5fa;
+    --news-muted: 0.85;
+  }
+}
+
+/* Article container without box */
+.card {
+  padding: 12px 0;
+  color: var(--news-fg);
+  transition: transform 200ms ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Header row: icon+date left, tag right */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 8px;
+}
+
+.left {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Adjust icon for dark mode */
+@media (prefers-color-scheme: dark) {
+  .header img { filter: invert(1) brightness(1.4); }
+}
+
+.date {
+  font-size: 1.3rem;
+  opacity: var(--news-muted);
+  color: var(--news-fg);
+  font-weight: 1000;
+  color: rgb(245, 12, 12);
+}
+
+/* Refined pill tag */
+.tag {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: var(--news-accent);
+  color: white;
+  opacity: 0.92;
+}
+
+/* Typography */
+.title {
+  margin: 6px 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 700;
+  color: var(--news-fg);
+}
+
+.desc {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  opacity: 0.95;
+  color: var(--news-fg);
+}
+
+.link {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: var(--news-accent);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 200ms ease;
+}
+
+.link:hover {
+  border-bottom-color: var(--news-accent);
+}
+
+/* Responsive adjustments */
+@media (width >= 800px) {
+  .newsList {
+    max-width: fit-content;
+    row-gap: 28px;
+  }
+  .title { font-size: 1.3rem; }
+  .desc { font-size: 1.1rem; }
+}
