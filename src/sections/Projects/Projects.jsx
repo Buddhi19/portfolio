@@ -3,6 +3,7 @@ import tunerimg from '../../assets/tuner.png';
 import proptable from '../../assets/proptables.png';
 import solvista from '../../assets/solvista.jpg';
 import calmquest from '../../assets/calmquest.png';
+import imagecodec from '../../assets/image_codec.png';
 import git from '../../assets/git.png';
 import ProjectCard from '../../common/ProjectCard';
 import YouTubeCard from '../../common/YoutubeCard';
@@ -37,11 +38,19 @@ function Projects() {
         />
          <ProjectCard
           src={calmquest}
-          link="https://github.com/Buddhi19/PythonLibrary-proptables"
+          link="https://github.com/Buddhi19/ACES-Hackathon-Cookie-Bytes-Calm-Quest-Front-End.git"
           h3="Calm Quest"
           p="Counselor Student Management System " 
           s = "For Universities with additional stress management components"
           k = "ACES Hackathon 2023"
+        />
+         <ProjectCard
+          src={imagecodec}
+          link="https://github.com/Buddhi19/ImageCodecLab.git"
+          h3="Image Codec Lab"
+          p="A modular toolkit for image/" 
+          s = "video transformation and compression."
+          k = ""
         />
         <ProjectCard
           src={git}

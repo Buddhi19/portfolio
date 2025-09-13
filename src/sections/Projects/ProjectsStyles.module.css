@@ -1,41 +1,45 @@
+/* Main section container */
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
-
-  img {
-    max-width: 250px;
-    max-height: 200px;
-    align-self: center;
-    background-color: var(--project-card-bg);
-    border-radius: 20px;
-  }
-
-  a {
-    width: fit-content;
-    text-decoration: none;
-    color: #222;
-    transition: transform 200ms ease-in-out;
-  }
-
-  a:hover {
-    transform: scale(1.05);
-  }
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/* Vertical stack for projects */
 .projectsContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  /* add p1,p2 */
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
 }
 
-@media (width >= 800px) {
-  .projectsContainer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0 30px;
+/* Theme variables */
+:root {
+  --project-card-bg: #ffffff;
+  --project-card-border: #e0e0e0;
+  --project-fg: #1a1a1a;
+  --project-accent: #2563eb;
+  --project-muted: 0.7;
+  --project-hover-bg: #f8f9fa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --project-card-bg: #1e1e1e;
+    --project-card-border: #333333;
+    --project-fg: #f5f7ff;
+    --project-accent: #60a5fa;
+    --project-muted: 0.85;
+    --project-hover-bg: #2a2a2a;
   }
+}
+
+/* Style for YouTubeCard wrapper */
+.youtubeCard {
+  width: 100%;
 }
