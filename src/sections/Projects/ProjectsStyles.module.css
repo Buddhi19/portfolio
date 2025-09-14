@@ -14,15 +14,15 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 100%;
-  max-width: 900px;
+  width: 150%;
+  max-width: 1500px;
 }
 
 /* Theme variables */
 :root {
   --project-card-bg: #ffffff;
   --project-card-border: #e0e0e0;
-  --project-fg: #1a1a1a;
+  --project-fg: #2d2c2c;
   --project-accent: #2563eb;
   --project-muted: 0.7;
   --project-hover-bg: #f8f9fa;
@@ -30,12 +30,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --project-card-bg: #1e1e1e;
-    --project-card-border: #333333;
-    --project-fg: #f5f7ff;
+    --project-card-bg: #ffffffc0;
+    --project-card-border: #e9e6e6;
+    --project-fg: #000000;
     --project-accent: #60a5fa;
     --project-muted: 0.85;
-    --project-hover-bg: #2a2a2a;
+    --project-hover-bg: #ffffff;
   }
 }
 

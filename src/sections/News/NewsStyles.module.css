@@ -26,14 +26,14 @@
 
 /* Theme tokens (safe fallbacks) */
 :root {
-  --news-fg: #1a1a1a;
+  --news-fg: #fbfbfb;
   --news-accent: #2563eb;
   --news-muted: 0.7;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --news-fg: #f5f7ff;
+    --news-fg: #000000;
     --news-accent: #60a5fa;
     --news-muted: 0.85;
   }
