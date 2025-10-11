@@ -24,19 +24,12 @@
 
 .item { margin: 0; }
 
-/* Theme tokens (safe fallbacks) */
+/* Theme tokens mapped to global app vars */
 :root {
-  --news-fg: #fbfbfb;
-  --news-accent: #2563eb;
-  --news-muted: 0.7;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --news-fg: #000000;
-    --news-accent: #60a5fa;
-    --news-muted: 0.85;
-  }
+  /* Uses global variables defined in App.css, which react to data-theme */
+  --news-fg: var(--text-color);
+  --news-accent: var(--btn-color);
+  --news-muted: 0.75;
 }
 
 /* Article container without box */
@@ -65,15 +58,12 @@
   gap: 10px;
 }
 
-/* Adjust icon for dark mode */
-@media (prefers-color-scheme: dark) {
-  .header img { filter: invert(1) brightness(1.4); }
-}
+/* Adjust icon for dark mode (match app's ThemeContext which sets body[data-theme]) */
+body[data-theme='dark'] .header img { filter: invert(1) brightness(1.4); }
 
 .date {
   font-size: 1.3rem;
   opacity: var(--news-muted);
-  color: var(--news-fg);
   font-weight: 1000;
   color: rgb(245, 12, 12);
 }
@@ -85,7 +75,7 @@
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
   background: var(--news-accent);
-  color: white;
+  color: var(--btn-text-color);
   opacity: 0.92;
 }
 
@@ -128,4 +118,12 @@
   }
   .title { font-size: 1.3rem; }
   .desc { font-size: 1.1rem; }
+}
+
+/* Explicit dark mode text overrides to ensure visibility */
+body[data-theme='dark'] .card,
+body[data-theme='dark'] .title,
+body[data-theme='dark'] .desc,
+body[data-theme='dark'] .link {
+  color: #fff;
 }

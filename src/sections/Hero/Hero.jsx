@@ -50,8 +50,14 @@ function Hero() {
           <a href="https://github.com/Buddhi19" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://linkedin.com/" target="_blank">
+          <a href="https://www.linkedin.com/in/buddhi-wijenayake-696707321/" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
+          </a>
+          <a href="https://scholar.google.com/citations?user=HDFMos8AAAAJ&hl=en" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar icon" style={{width: '24px', height: '24px'}} />
+          </a>
+          <a href="https://www.youtube.com/channel/UC0hLpWIMpegCzoTwPbYtQ6g" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube icon" style={{width: '28px', height: '24px'}} />
           </a>
         </span>
         <p className={styles.description}>

@@ -1,5 +1,4 @@
 import styles from './NewsStyles.module.css';
-import checkMarkIcon from '../../assets/checkmark-dark.svg';
 
 function formatDate(iso) {
   const d = new Date(iso);
@@ -12,28 +11,40 @@ function formatDate(iso) {
 
 const NEWS = [
   {
-    id: '2025-09-icter',
-    date: '2025-09-10',
-    title: 'One paper accepted at ICTer 2025 🎉',
-    summary: 'Our paper was accepted to International Conference on Advances in ICT for Emerging Regions (ICTer) 2025.',
+    id: '2025-10-icas',
+    date: '2025-10-11',
+    title: 'One paper accepted at ICAS 2025 🎉',
+    summary:
+      'Our paper titled "Correlation Analysis of Age Structure Metrics and Cause-Specific Mortality: A Global and WHO Regional Comparison Using the Top 5 Causes of Death in 2021", was accepted to the International Conference on Applied Sciences, University of Vavuniya.',
     tag: 'Publication',
     href: '',
   },
   {
-    id: '2025-09-instructor',
+    id: '2025-09-icter',
+    date: '2025-09-10',
+    title: 'One paper accepted at ICTer 2025 🎉',
+    summary:
+      'Our paper titled “PoPStat: Leveraging Population Pyramids to quantify demographic vulnerability to COVID‑19” was accepted to International Conference on Advances in ICT for Emerging Regions 2025.',
+    tag: 'Publication',
+    href: 'https://www.arxiv.org/abs/2509.14213',
+  },
+  {
+    id: '2025-08-instructor',
     date: '2025-08-25',
     title: 'Started a new position as a Temporary Instructor',
-    summary: 'Dept. of Electrical & Electronic Engineering, Faculty of Engineering, University of Peradeniya',
+    summary:
+      'Dept. of Electrical & Electronic Engineering, Faculty of Engineering, University of Peradeniya.',
     tag: 'Position',
     href: '',
   },
   {
-    id: '2025-09-mercon',
+    id: '2025-07-mercon',
     date: '2025-07-29',
-    title: 'One paper accepted at MERCon 2025🎉',
-    summary: 'Our paper "Enhanced SCanNet with CBAM and Dice Loss for Semantic Change Detection " has been accepted to the Moratuwa Engineering Research Conference (MERCon).',
+    title: 'One paper accepted at MERCon 2025 🎉',
+    summary:
+      'Our paper titled “Enhanced SCanNet with CBAM and Dice Loss for Semantic Change Detection” accepted to Moratuwa Engineering Research Conference 2025 (International Conference).',
     tag: 'Publication',
-    href: '',
+    href: 'https://arxiv.org/abs/2505.04199',
   },
 ];
 
@@ -43,7 +54,6 @@ function NewsItem({ item }) {
       <article className={styles.card} aria-labelledby={`${item.id}-title`}>
         <header className={styles.header}>
           <span className={styles.left}>
-            {/* <img src={checkMarkIcon} alt="" /> */}
             <time className={styles.date} dateTime={item.date}>
               [{formatDate(item.date)}]
             </time>
@@ -79,3 +89,4 @@ function News() {
 }
 
 export default News;
+
