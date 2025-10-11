@@ -40,7 +40,7 @@ function NavBar() {
           <a className={styles.link} href="#projects" onClick={(e) => goHomeAndScroll(e, 'projects')}>Projects</a>
           <a className={styles.link} href="#skills" onClick={(e) => goHomeAndScroll(e, 'skills')}>Skills</a>
           <a className={styles.link} href="#contact" onClick={(e) => goHomeAndScroll(e, 'contact')}>Contact</a>
-          <a className={styles.link} href="#/courses" onClick={(e) => { e.preventDefault(); setOpen(false); navigate('/courses'); }}>Courses</a>
+          {/* <a className={styles.link} href="#/courses" onClick={(e) => { e.preventDefault(); setOpen(false); navigate('/courses'); }}>Courses</a> */}
         </div>
 
         <div className={styles.right}>

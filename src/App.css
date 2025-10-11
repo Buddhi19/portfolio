@@ -30,7 +30,7 @@ html { scroll-behavior: smooth; }
 #root {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 90px;
 }
 
 h1,
