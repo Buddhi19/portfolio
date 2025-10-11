@@ -76,7 +76,7 @@ body[data-theme='dark'] .header img { filter: invert(1) brightness(1.4); }
   border-radius: 999px;
   background: var(--news-accent);
   color: var(--btn-text-color);
-  opacity: 0.92;
+  opacity: 0.82;
 }
 
 /* Typography */

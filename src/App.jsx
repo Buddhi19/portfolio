@@ -1,21 +1,17 @@
 import './App.css';
-import Contact from './sections/Contact/Contact';
-import Footer from './sections/Footer/Footer';
-import Hero from './sections/Hero/Hero';
-import News from './sections/News/News';
-import Projects from './sections/Projects/Projects';
-import Skills from './sections/Skills/Skills';
-import Work from './sections/Work-Experience/work';
+import NavBar from './components/NavBar/NavBar.jsx';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import CoursesPage from './pages/CoursesPage.jsx';
 
 function App() {
   return (
     <>
-      <Hero />
-      <News />
-      <Work />
-      <Projects />
-      <Skills />
-      <Footer />
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/courses" element={<CoursesPage />} />
+      </Routes>
     </>
   );
 }

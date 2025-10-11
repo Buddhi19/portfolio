@@ -10,15 +10,15 @@ function formatDate(iso) {
 }
 
 const NEWS = [
-  {
-    id: '2025-10-icas',
-    date: '2025-10-11',
-    title: 'One paper accepted at ICAS 2025 🎉',
-    summary:
-      'Our paper titled "Correlation Analysis of Age Structure Metrics and Cause-Specific Mortality: A Global and WHO Regional Comparison Using the Top 5 Causes of Death in 2021", was accepted to the International Conference on Applied Sciences, University of Vavuniya.',
-    tag: 'Publication',
-    href: '',
-  },
+  // {
+  //   id: '2025-10-icas',
+  //   date: '2025-10-11',
+  //   title: 'One paper accepted at ICAS 2025 🎉',
+  //   summary:
+  //     'Our paper titled "Correlation Analysis of Age Structure Metrics and Cause-Specific Mortality: A Global and WHO Regional Comparison Using the Top 5 Causes of Death in 2021", was accepted to the International Conference on Applied Sciences, University of Vavuniya.',
+  //   tag: 'Publication',
+  //   href: '',
+  // },
   {
     id: '2025-09-icter',
     date: '2025-09-10',

@@ -1,0 +1,44 @@
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+/* List wrapper */
+.eduList {
+  width: 90%;
+  max-width: 86ch;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+/* Card */
+.card { padding: 0.5rem 0; background: transparent; border: none; }
+
+.header { display: flex; justify-content: space-between; align-items: start; gap: 1rem; }
+
+.title { margin: 0; font-size: 1.2rem; font-weight: 800; }
+
+.subtitle { margin: 4px 0 0; opacity: 0.9; }
+
+.meta { display: flex; flex-direction: column; gap: 2px; text-align: right; font-weight: 700; opacity: 0.9; }
+
+.institute { margin: 6px 0 0; font-weight: 600; }
+
+.bullets { margin: 8px 0 0; padding-left: 1.2rem; }
+
+.bullets li { margin: 6px 0; }
+
+.link { display: inline-block; margin-top: 10px; font-weight: 800; color: var(--btn-color); text-decoration: none; }
+
+/* Dark mode tuning to match rest of app */
+/* Clean divider between entries */
+.card + .card { border-top: 1px dashed rgba(127,127,127,0.35); margin-top: 14px; padding-top: 14px; }
+body[data-theme='dark'] .card + .card { border-top-color: rgba(255,255,255,0.2); }
+
+@media (width >= 800px) {
+  .title { font-size: 1.35rem; }
+}

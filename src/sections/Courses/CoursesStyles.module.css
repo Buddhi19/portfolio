@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.list {
+  width: 90%;
+  max-width: 70ch;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.item { margin: 6px 0; }
+
+.note {
+  margin-top: 8px;
+  opacity: 0.9;
+}
