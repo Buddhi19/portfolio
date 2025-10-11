@@ -8,8 +8,8 @@
 
 /* List wrapper */
 .eduList {
-  width: 90%;
-  max-width: 86ch;
+  width: 100%;
+  max-width: 120ch;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
