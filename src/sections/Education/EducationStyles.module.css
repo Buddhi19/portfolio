@@ -9,7 +9,7 @@
 /* List wrapper */
 .eduList {
   width: 100%;
-  max-width: 120ch;
+  max-width: 150ch;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
