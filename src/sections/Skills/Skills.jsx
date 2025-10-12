@@ -21,7 +21,7 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="MATLAB" />
         {/* <SkillList src={checkMarkIcon} skill="Node" /> */}
       </div>
-      <hr />
+      <hr className={styles.divider} />
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="Altium" />
         <SkillList src={checkMarkIcon} skill="Webots" />
@@ -30,7 +30,7 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="Revit" />
         <SkillList src={checkMarkIcon} skill="Jupyter Lab" />
       </div>
-      <hr />
+      <hr className={styles.divider} />
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="sklearn" />
         <SkillList src={checkMarkIcon} skill="torch" />

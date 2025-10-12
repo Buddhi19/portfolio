@@ -1,7 +1,31 @@
 .container {
+  position: relative;
+  isolation: isolate;
+  padding: 2.5rem 1rem;
   text-align: center;
-  p {
-    font-size: 16px;
-    color: var(--footer-text-color);
-  }
+  color: rgba(17, 24, 39, 0.68);
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(9, 135, 242, 0.12), transparent 55%);
+  opacity: 0.65;
+  z-index: -1;
+}
+
+.container p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+body[data-theme='dark'] .container {
+  color: rgba(226, 232, 240, 0.7);
+}
+
+body[data-theme='dark'] .container::before {
+  background: linear-gradient(180deg, rgba(66, 153, 255, 0.18), transparent 55%);
+  opacity: 0.45;
 }
