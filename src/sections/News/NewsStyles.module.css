@@ -120,6 +120,18 @@ body[data-theme='dark'] .header img { filter: invert(1) brightness(1.4); }
   .desc { font-size: 1.1rem; }
 }
 
+@media (max-width: 640px) {
+  .container { padding: 2.6rem 1.15rem; }
+  .newsList {
+    width: 100%;
+    row-gap: 18px;
+  }
+  .title { font-size: 1.08rem; }
+  .desc { font-size: 0.98rem; }
+  .tag { font-size: 1rem; }
+  .date { font-size: 1.1rem; }
+}
+
 /* Explicit dark mode text overrides to ensure visibility */
 body[data-theme='dark'] .card,
 body[data-theme='dark'] .title,

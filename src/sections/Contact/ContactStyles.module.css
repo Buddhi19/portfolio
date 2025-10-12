@@ -118,3 +118,20 @@ input[type='submit']:active {
     gap: 28px;
   }
 }
+
+@media (max-width: 640px) {
+  .container { padding: 3rem 1.1rem; }
+  .container::before { inset: -60px -24px; }
+  form {
+    padding: 1.6rem 1.25rem;
+    gap: 20px;
+    border-radius: 18px;
+  }
+  textarea,
+  input:not([type='submit']) {
+    font-size: 0.95rem;
+    height: 48px;
+  }
+  textarea { min-height: 140px; }
+  input[type='submit'] { width: 100%; max-width: 260px; }
+}

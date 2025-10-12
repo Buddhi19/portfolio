@@ -127,3 +127,18 @@ body[data-theme='dark'] .summary {
   .timeline { padding-left: 3.2rem; }
   .role { font-size: 1.28rem; }
 }
+
+@media (max-width: 640px) {
+  .container { padding: 3rem 1.15rem 2.6rem; }
+  .container::before { inset: -60px -20px; }
+  .timeline {
+    padding-left: 2rem;
+    gap: 18px;
+  }
+  .timeline::before { left: 0.9rem; }
+  .card { padding: 1.15rem 1.15rem 1.2rem; }
+  .heading { gap: 0.7rem; }
+  .role { font-size: 1.1rem; }
+  .date { font-size: 0.88rem; }
+  .summary { margin-top: 0.7rem; font-size: 0.98rem; }
+}

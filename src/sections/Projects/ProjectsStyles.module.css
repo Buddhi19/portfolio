@@ -187,7 +187,11 @@ body[data-theme='dark'] .bullets li {
 }
 
 @media (max-width: 640px) {
+  .container { padding: 3rem 1.15rem 2.6rem; }
+  .container::before { inset: -60px -24px; }
   .projectsContainer { gap: 20px; }
   .content { padding: 1.2rem 1.25rem 1.35rem; }
   .projectTitle { font-size: 1.18rem; }
+  .meta { font-size: 0.9rem; }
+  .links { gap: 8px 12px; }
 }

@@ -79,3 +79,22 @@ body[data-theme='dark'] .skillList span {
   .skillList { gap: 18px 22px; }
   .skillList span { padding: 0.85rem 1.6rem; font-size: 1rem; }
 }
+
+@media (max-width: 640px) {
+  .container { padding: 3rem 1.1rem; gap: 1.8rem; }
+  .container::before { inset: -60px -24px; }
+  .skillList { gap: 12px; }
+  .skillList span {
+    width: calc(50% - 12px);
+    justify-content: center;
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+  }
+  .skillList img { width: 16px; height: 16px; }
+}
+
+@media (max-width: 420px) {
+  .skillList span {
+    width: 100%;
+  }
+}

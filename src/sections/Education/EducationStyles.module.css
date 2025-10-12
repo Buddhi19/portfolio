@@ -184,3 +184,22 @@ body[data-theme='dark'] .meta { color: rgba(226, 232, 240, 0.85); }
 @media (width >= 900px) {
   .title { font-size: 1.4rem; }
 }
+
+@media (max-width: 640px) {
+  .container { padding: 2.8rem 1.15rem; }
+  .container::before { inset: -60px -20px; }
+  .eduList { row-gap: 16px; }
+  .card {
+    padding: 1.1rem 1.2rem 1.25rem 2.1rem;
+    border-radius: 18px;
+  }
+  .card::before { left: 1.2rem; }
+  .card::after {
+    left: calc(1.2rem + 4px);
+    bottom: 1.2rem;
+  }
+  .header { gap: 0.65rem; }
+  .meta { font-size: 0.9rem; }
+  .bullets { margin-top: 10px; }
+  .bullets li { margin: 8px 0; padding-left: 14px; }
+}

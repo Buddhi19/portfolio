@@ -1,125 +1,166 @@
+/* Layout */
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 24px;
   text-align: center;
-  height: 100dvh;
-  min-height: 600px;
-  position: relative; /* Added for stars positioning context */
-  overflow: hidden; /* Added to contain the stars */
-
-  .hero {
-    max-width: 180px;
-  }
-
-  span {
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-    position: relative; /* Added */
-    z-index: 2; /* Added */
-
-    a {
-      margin: 0;
-
-      img {
-        width: 30px;
-      }
-    }
-  }
-
-  a {
-    width: fit-content;
-    align-self: center;
-    position: relative; /* Added */
-    z-index: 2; /* Added */
-  }
-
-  button {
-    background-color: var(--btn-color);
-    color: var(--btn-text-color);
-    border: none;
-    border-radius: 20px;
-    width: 126px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-    position: relative; /* Added */
-    z-index: 2; /* Added */
-  }
-
-  button:hover {
-    transform: scale(1.05);
-  }
-
-  button:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  }
+  min-height: 90vh;
+  padding: 3.5rem 1.5rem 3rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .colorModeContainer {
   position: relative;
-  z-index: 2; /* Added */
+  display: flex;
+  justify-content: center;
+  z-index: 1;
 }
 
-.colorMode {
-  position: absolute;
-  top: 10px;
-  right: 70px;
-  width: 25px;
-  z-index: 3; /* Added */
-}
-
-.colorMode:hover {
-  cursor: pointer;
-}
-
-.description {
-  max-width: 60ch;
-  position: relative; /* Added */
-  z-index: 2; /* Added */
-  /* font size: 5 */
-  font-size: x-large;
+.hero {
+  width: clamp(190px, 48vw, 320px);
+  border-radius: 26px;
+  /* box-shadow: 0 24px 38px rgba(15, 23, 42, 0.16); */
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  position: relative; /* Added */
-  z-index: 2; /* Added */
+  align-items: center;
+  gap: 18px;
+  max-width: 62ch;
+  position: relative;
+  z-index: 1;
 }
 
-/* Added these styles for text visibility in dark mode */
-:global(.dark-mode) {
-  .container h1,
-  .container h2,
-  .container p {
-    color: #ffffff;
-  }
+.info h1 {
+  font-size: clamp(2.4rem, 8vw, 3.8rem);
+  margin: 0;
 }
+
+.info h2 {
+  font-size: clamp(1.2rem, 4vw, 1.7rem);
+  font-weight: 500;
+  margin: 0;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 12px 20px rgba(15, 23, 42, 0.12);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.socials a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 26px rgba(15, 23, 42, 0.16);
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+}
+
+.description {
+  max-width: 60ch;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.68;
+  color: rgba(17, 24, 39, 0.78);
+}
+
+.description + .description { margin-top: -8px; }
+
+.description a {
+  color: var(--btn-color);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  font-weight: 600;
+}
+
+.description a:hover { border-bottom-color: var(--btn-color); }
+
+.resumeLink {
+  text-decoration: none;
+  align-self: center;
+}
+
+.resumeButton {
+  background: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 24px;
+  width: 140px;
+  height: 52px;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 16px 28px rgba(9, 135, 242, 0.28);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  cursor: pointer;
+}
+
+.resumeButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 36px rgba(9, 135, 242, 0.3);
+}
+
+.resumeButton:active {
+  transform: translateY(1px);
+  box-shadow: 0 10px 18px rgba(9, 135, 242, 0.24);
+}
+
+body[data-theme='dark'] .socials a {
+  background: rgba(36, 42, 58, 0.88);
+  box-shadow: 0 16px 26px rgba(0, 0, 0, 0.46);
+}
+
+body[data-theme='dark'] .description { color: rgba(226, 232, 240, 0.82); }
 
 @media (width >= 800px) {
   .container {
     flex-direction: row-reverse;
-    align-items: center;
+    text-align: left;
     justify-content: space-evenly;
-    .hero {
-      max-width: 650px;
-      width: 650px;
-    }
+    min-height: 100vh;
   }
+
+  .info { align-items: flex-start; }
+
+  .socials { justify-content: flex-start; }
+
+  .resumeLink { align-self: flex-start; }
 }
 
-@media (width >= 1400px) {
+@media (max-width: 640px) {
   .container {
-    .hero {
-      max-width: 700px;
-      width: 800px;
-    }
+    min-height: auto;
+    padding: 3rem 1.1rem 2.6rem;
+    gap: 20px;
+  }
+
+  .hero { width: clamp(170px, 60vw, 240px); }
+
+  .description { font-size: 1rem; }
+
+  .socials { gap: 16px; }
+
+  .resumeButton {
+    width: 100%;
+    max-width: 260px;
   }
 }

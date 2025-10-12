@@ -25,6 +25,7 @@ body {
   margin: 0 auto 60px;
   font-family: 'Rubik', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
   transition: background 300ms ease;
+  overflow-x: hidden;
 }
 
 body[data-theme='dark'] {
@@ -37,6 +38,7 @@ html { scroll-behavior: smooth; }
   display: flex;
   flex-direction: column;
   gap: 80px;
+  width: 100%;
 }
 
 h1,
@@ -105,4 +107,14 @@ p {
       margin-bottom: 82px;
     }
   }
+}
+
+@media (max-width: 640px) {
+  body { margin-bottom: 48px; }
+  #root { gap: 68px; }
+  h1 { font-size: 30px; }
+  h2,
+  h3 { font-size: 18px; }
+  p { font-size: 15px; }
+  .sectionTitle { margin-bottom: 40px; }
 }

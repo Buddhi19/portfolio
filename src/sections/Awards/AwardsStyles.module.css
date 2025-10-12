@@ -204,3 +204,24 @@ body[data-theme='dark'] .chip { color: #111; box-shadow: inset 0 0 0 1px rgba(25
 @media (width >= 900px) {
   .title { font-size: 1.32rem; }
 }
+
+@media (max-width: 640px) {
+  .container { padding: 2.8rem 1.15rem; }
+  .container::before { inset: -60px -24px; }
+  .list { gap: 14px; }
+  .card {
+    padding: 1.15rem 1.2rem 1.2rem 2rem;
+    border-radius: 18px;
+  }
+  .card::before { left: 1.2rem; }
+  .card::after {
+    left: calc(1.2rem + 3px);
+    bottom: 1rem;
+  }
+  .header { gap: 0.45rem; }
+  .meta { font-size: 0.9rem; }
+  .details { margin-top: 8px; font-size: 0.98rem; }
+  .links { margin-top: 4px; }
+  .link { font-size: 0.92rem; }
+  .chips { gap: 5px; }
+}
