@@ -1,6 +1,7 @@
 import Hero from '../sections/Hero/Hero';
 import News from '../sections/News/News';
 import Education from '../sections/Education/Education';
+import Awards from '../sections/Awards/Awards';
 import Work from '../sections/Work-Experience/work';
 import Projects from '../sections/Projects/Projects';
 import Skills from '../sections/Skills/Skills';
@@ -13,6 +14,7 @@ function Home() {
       <Hero />
       <News />
       <Education />
+      <Awards />
       <Work />
       <Projects />
       <Skills />
@@ -23,4 +25,3 @@ function Home() {
 }
 
 export default Home;
-

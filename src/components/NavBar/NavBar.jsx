@@ -36,6 +36,7 @@ function NavBar() {
           <a className={styles.link} href="#hero" onClick={(e) => goHomeAndScroll(e, 'hero')}>Home</a>
           <a className={styles.link} href="#news" onClick={(e) => goHomeAndScroll(e, 'news')}>News</a>
           <a className={styles.link} href="#education" onClick={(e) => goHomeAndScroll(e, 'education')}>Education</a>
+          <a className={styles.link} href="#awards" onClick={(e) => goHomeAndScroll(e, 'awards')}>Awards</a>
           <a className={styles.link} href="#work" onClick={(e) => goHomeAndScroll(e, 'work')}>Experience</a>
           <a className={styles.link} href="#projects" onClick={(e) => goHomeAndScroll(e, 'projects')}>Projects</a>
           <a className={styles.link} href="#skills" onClick={(e) => goHomeAndScroll(e, 'skills')}>Skills</a>
@@ -57,6 +58,7 @@ function NavBar() {
         <a className={styles.drawerLink} href="#hero" onClick={(e) => goHomeAndScroll(e, 'hero')}>Home</a>
         <a className={styles.drawerLink} href="#news" onClick={(e) => goHomeAndScroll(e, 'news')}>News</a>
         <a className={styles.drawerLink} href="#education" onClick={(e) => goHomeAndScroll(e, 'education')}>Education</a>
+        <a className={styles.drawerLink} href="#awards" onClick={(e) => goHomeAndScroll(e, 'awards')}>Awards</a>
         <a className={styles.drawerLink} href="#work" onClick={(e) => goHomeAndScroll(e, 'work')}>Experience</a>
         <a className={styles.drawerLink} href="#projects" onClick={(e) => goHomeAndScroll(e, 'projects')}>Projects</a>
         <a className={styles.drawerLink} href="#skills" onClick={(e) => goHomeAndScroll(e, 'skills')}>Skills</a>
