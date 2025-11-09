@@ -5,6 +5,63 @@
   padding: 2rem 1rem;
 }
 
+.summary {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 2rem;
+  margin: 0.75rem 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+.section {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 1.5rem;
+}
+
+.subTitle {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.caption {
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.table {
+  border: 1px solid var(--muted-border, rgba(127, 127, 127, 0.3));
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.headerRow, .row {
+  display: grid;
+  grid-template-columns: 120px 1fr 90px 48px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.headerRow {
+  background: var(--table-header, rgba(127, 127, 127, 0.08));
+  font-weight: 600;
+}
+
+.row:nth-child(odd) {
+  background: var(--table-stripe, rgba(127, 127, 127, 0.06));
+}
+
+.code, .name, .grade, .credits {
+  padding: 10px 12px;
+}
+
+.code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.name { }
+.grade { text-align: center; }
+.credits { text-align: center; }
+
 .list {
   width: 90%;
   max-width: 70ch;
@@ -17,4 +74,17 @@
 .note {
   margin-top: 8px;
   opacity: 0.9;
+}
+
+.notes {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 1rem;
+  opacity: 0.95;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 700px) {
+  .summary { grid-template-columns: 1fr; }
+  .headerRow, .row { grid-template-columns: 90px 1fr 70px 40px; }
 }

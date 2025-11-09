@@ -41,6 +41,16 @@ const GROUPS = [
       {
         code: 'C.1',
         title:
+          'Enhanced SCanNet with CBAM and Dice Loss for Semantic Change Detection',
+        authors:
+          'Athulya Ratnayake, Buddhi Wijenayake, Praveen Sumanasekara, Roshan Godaliyadda, Vijitha Herath, Parakrama Ekanayake',
+        href: 'https://ieeexplore.ieee.org/document/11217111',
+        venue:
+          'Moratuwa Engineering Research Conference (MERCon), University of Moratuwa, Sri Lanka, Aug. 2025 (11th Int. Conf.)',
+      },
+      {
+        code: 'C.2',
+        title:
           'PoPStat–COVID19: Leveraging Population Pyramids to Quantify Demographic Vulnerability to COVID-19',
         authors:
           'Buddhi Wijenayake, Athulya Ratnayake, Lelumi Edirisinghe, U. Wijeratne, Tharaka Fonseka, Roshan Godaliyadda, Samath Dharmaratne, Parakrama Ekanayake, Vijitha Herath, Inosha Alwis, Supun Manathunga',
@@ -48,16 +58,7 @@ const GROUPS = [
         venue:
           'International Conference on Advances in ICT for Emerging Regions (ICTer), Colombo, Sri Lanka, Nov. 2025 (25th Int. Conf.)',
       },
-      {
-        code: 'C.2',
-        title:
-          'Enhanced SCanNet with CBAM and Dice Loss for Semantic Change Detection',
-        authors:
-          'Athulya Ratnayake, Buddhi Wijenayake, Praveen Sumanasekara, Roshan Godaliyadda, Vijitha Herath, Parakrama Ekanayake',
-        href: 'https://doi.org/10.48550/arXiv.2505.04199',
-        venue:
-          'Moratuwa Engineering Research Conference (MERCon), University of Moratuwa, Sri Lanka, Aug. 2025 (11th Int. Conf.)',
-      },
+      
       {
         code: 'C.3',
         title:

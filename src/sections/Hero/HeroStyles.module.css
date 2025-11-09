@@ -20,7 +20,7 @@
 }
 
 .hero {
-  width: clamp(190px, 48vw, 320px);
+  width: clamp(240px, 52vw, 380px);
   border-radius: 26px;
   /* box-shadow: 0 24px 38px rgba(15, 23, 42, 0.16); */
 }
