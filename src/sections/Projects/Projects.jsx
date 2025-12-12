@@ -20,7 +20,7 @@ function Projects() {
         { label: 'GitHub', href: 'https://github.com/Buddhi19/PythonLibrary-proptables' },
       ],
       bullets: [
-        'Initiated in 3rd year of undergraduate study to quantify how population-pyramid shape relates to cause-specific mortality.',
+        'Initiated in 2nd year of undergraduate study to quantify how population-pyramid shape relates to cause-specific mortality.',
         'Designed two novel metrics: PoPDivergence — a scalar representation of complex demographic structure — and PoPStat — a statistic linking pyramid shape to mortality patterns.',
         'Building an algorithm to reconstruct noisy / incomplete mortality records using PoPDivergence.',
         'Supervised by Prof. Roshan Godaliyadda, Prof. Samath Dharmaratne, Prof. Parakrama Ekanayake, and Prof. Vijitha Herath.',
