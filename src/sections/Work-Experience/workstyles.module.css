@@ -54,12 +54,22 @@ body[data-theme='dark'] .container::before { opacity: 0.22; }
   border: 1px solid rgba(9, 135, 242, 0.14);
   box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
   transition: transform 200ms ease, box-shadow 200ms ease;
+  opacity: 0;
+  transform: translateY(18px);
+  animation: workRise 0.85s ease forwards;
+  animation-delay: var(--delay, 0s);
 }
 
 .card:hover {
   transform: translateY(-3px);
   box-shadow: 0 24px 48px rgba(15, 23, 42, 0.12);
 }
+
+.timeline > .card:nth-of-type(1) { --delay: 0s; }
+.timeline > .card:nth-of-type(2) { --delay: 0.08s; }
+.timeline > .card:nth-of-type(3) { --delay: 0.16s; }
+.timeline > .card:nth-of-type(4) { --delay: 0.24s; }
+.timeline > .card:nth-of-type(5) { --delay: 0.32s; }
 
 body[data-theme='dark'] .card {
   background: linear-gradient(135deg, rgba(36, 42, 58, 0.9), rgba(18, 20, 27, 0.96));
@@ -139,6 +149,19 @@ body[data-theme='dark'] .date,
 body[data-theme='dark'] .summary,
 body[data-theme='dark'] .details {
   color: rgba(226, 232, 240, 0.8);
+}
+
+@keyframes workRise {
+  0% { opacity: 0; transform: translateY(18px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 @media (width >= 880px) {

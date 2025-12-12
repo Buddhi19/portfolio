@@ -8,6 +8,7 @@
   padding: 3rem 1.4rem 2.6rem;
   text-align: center;
   gap: 2rem;
+  animation: skillsFade 0.8s ease;
 }
 
 .container::before {
@@ -58,12 +59,29 @@ body[data-theme='dark'] .container::before { opacity: 0.22; }
   letter-spacing: 0.5px;
   text-transform: uppercase;
   transition: transform 160ms ease, box-shadow 160ms ease;
+  opacity: 0;
+  transform: translateY(14px) scale(0.98);
+  animation: pillRise 0.7s ease forwards;
+  animation-delay: var(--delay, 0s);
 }
 
 .skillList span:hover {
   transform: translateY(-3px);
   box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
 }
+
+.skillList span:nth-of-type(1) { --delay: 0s; }
+.skillList span:nth-of-type(2) { --delay: 0.04s; }
+.skillList span:nth-of-type(3) { --delay: 0.08s; }
+.skillList span:nth-of-type(4) { --delay: 0.12s; }
+.skillList span:nth-of-type(5) { --delay: 0.16s; }
+.skillList span:nth-of-type(6) { --delay: 0.2s; }
+.skillList span:nth-of-type(7) { --delay: 0.24s; }
+.skillList span:nth-of-type(8) { --delay: 0.28s; }
+.skillList span:nth-of-type(9) { --delay: 0.32s; }
+.skillList span:nth-of-type(10) { --delay: 0.36s; }
+.skillList span:nth-of-type(11) { --delay: 0.4s; }
+.skillList span:nth-of-type(12) { --delay: 0.44s; }
 
 .skillList img { width: 18px; height: 18px; }
 
@@ -83,6 +101,25 @@ body[data-theme='dark'] .skillList span {
   border-radius: 999px;
   background: linear-gradient(90deg, rgba(9, 135, 242, 0), rgba(9, 135, 242, 0.45), rgba(9, 135, 242, 0));
   margin: 18px auto 6px;
+}
+
+@keyframes skillsFade {
+  0% { opacity: 0; transform: translateY(16px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pillRise {
+  0% { opacity: 0; transform: translateY(14px) scale(0.98); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .container,
+  .skillList span {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 @media (width >= 900px) {

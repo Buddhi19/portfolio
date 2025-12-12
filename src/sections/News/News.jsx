@@ -11,10 +11,25 @@ function formatDate(iso) {
 
 const NEWS = [
   {
+    id: '2025-11-RA',
+    date: '2025-11-25',
+    title: 'Started a new position as a Research Assistant',
+    summary: 'Multidisciplinary AI Research Centre (MARC), Faculty of Engineering, University of Peradeniya.',
+    tag: 'Position',
+    href: '',
+  },{
     id: '2025-11-manamperi',
     date: '2025-11-15',
     title: 'Won the Manamperi Merit Award for Best undergraduate research engineering project carried out at a faculty of engineering in a Sri Lankan university 🎉',
     summary: 'Our final year project titled “Satellite Image based Remote Sensing Change Detection and Landscape Mapping” has been selected as the First Runner-up of the Manamperi Award 2025 (Group Category).',
+    tag: 'Award',
+    href: '',
+  },
+  {
+    id: '2025-10-IEEXTREME',
+    date: '2025-10',
+    title: 'Placed 5th Globally and 1st in Sri Lanka at IEEEXtreme 2025 🎉',
+    summary: 'Our team Insomniacs emerged as Sri Lanka’s No. 1 team for the 3rd consecutive time, and secured 5th place worldwide in the hashtag#IEEEExtreme19 Global Programming Competition, competing among 8,000+ teams from across the globe!.',
     tag: 'Award',
     href: '',
   },

@@ -43,6 +43,10 @@ body[data-theme='dark'] .container::before { opacity: 0.24; }
   border: 1px solid rgba(9, 135, 242, 0.14);
   box-shadow: 0 22px 44px rgba(15, 23, 42, 0.08);
   transition: transform 220ms ease, box-shadow 220ms ease;
+  opacity: 0;
+  transform: translateY(20px) scale(0.99);
+  animation: projectRise 0.85s ease forwards;
+  animation-delay: var(--delay, 0s);
 }
 
 .project::before {
@@ -66,6 +70,15 @@ body[data-theme='dark'] .project {
   border-color: rgba(255, 255, 255, 0.12);
   box-shadow: 0 28px 56px rgba(0, 0, 0, 0.48);
 }
+
+.projectsContainer > .project:nth-of-type(1) { --delay: 0s; }
+.projectsContainer > .project:nth-of-type(2) { --delay: 0.06s; }
+.projectsContainer > .project:nth-of-type(3) { --delay: 0.12s; }
+.projectsContainer > .project:nth-of-type(4) { --delay: 0.18s; }
+.projectsContainer > .project:nth-of-type(5) { --delay: 0.24s; }
+.projectsContainer > .project:nth-of-type(6) { --delay: 0.3s; }
+.projectsContainer > .project:nth-of-type(7) { --delay: 0.36s; }
+.projectsContainer > .project:nth-of-type(8) { --delay: 0.42s; }
 
 .thumbWrap {
   position: relative;
@@ -159,6 +172,19 @@ body[data-theme='dark'] .project {
 }
 
 .link:hover::after { transform: translateX(2px); }
+
+@keyframes projectRise {
+  0% { opacity: 0; transform: translateY(20px) scale(0.99); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
 
 .bullets {
   margin: 0;

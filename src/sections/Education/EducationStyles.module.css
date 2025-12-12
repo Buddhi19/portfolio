@@ -42,6 +42,10 @@ body[data-theme='dark'] .container::before { opacity: 0.2; }
   background: linear-gradient(135deg, rgba(244, 250, 255, 0.95), rgba(255, 255, 255, 0.84));
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
   transition: transform 220ms ease, box-shadow 220ms ease;
+  opacity: 0;
+  transform: translateY(18px);
+  animation: eduRise 0.85s ease forwards;
+  animation-delay: var(--delay, 0s);
 }
 
 .card:hover {
@@ -81,6 +85,10 @@ body[data-theme='dark'] .card:hover { box-shadow: 0 24px 56px rgba(0, 0, 0, 0.6)
 }
 
 .eduList > .card:last-of-type::after { display: none; }
+.eduList > .card:nth-of-type(1) { --delay: 0s; }
+.eduList > .card:nth-of-type(2) { --delay: 0.08s; }
+.eduList > .card:nth-of-type(3) { --delay: 0.16s; }
+.eduList > .card:nth-of-type(4) { --delay: 0.24s; }
 
 .header {
   display: flex;
@@ -167,6 +175,19 @@ body[data-theme='dark'] .meta { color: rgba(226, 232, 240, 0.85); }
 .link:hover { border-bottom-color: var(--btn-color); }
 
 .link:hover::after { transform: translateX(2px); }
+
+@keyframes eduRise {
+  0% { opacity: 0; transform: translateY(18px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
 
 @media (width >= 720px) {
   .header {
