@@ -20,20 +20,19 @@ function Education() {
           <p className={styles.institute}>Faculty of Engineering, University of Peradeniya</p>
           <ul className={styles.bullets}>
             <li>
-              <strong>CGPA: 3.823/4.00</strong>
+              <strong>GPA: 3.85/4.00</strong>
               {' | '}
               <a
-                href="https://drive.google.com/file/d/1UWcUrEr4T6bXhAqrWHH9hpJoQ5w9ttP2/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1ibvg7Os6gmGtLjC374P-CzX5FbtxmpEY/view?usp=drive_link"
                 target="_blank"
                 rel="noreferrer"
               >
-                Temporary Transcript
+                Academic Record
               </a>
             </li>
             <li>Graduated with <strong>First Class Honors</strong></li>
-            <li>Ranked 7th in the Class of Electrical and Electronic Engineering (7/105)</li>
             <li>
-              Degree program conducted and assessed in <strong>English Medium</strong> and accredited by the <strong>Washington Accord</strong>.
+              Complete degree program was conducted and assessed in <strong>English Medium</strong> and accredited by the <strong>Washington Accord</strong>.
             </li>
           </ul>
 
@@ -55,10 +54,11 @@ function Education() {
           </header>
           <ul className={styles.bullets}>
             <li>
-              Ranked <strong>10th in the Kandy District</strong>, <strong>107th</strong> in Sri Lanka.
+              Top <strong>0.8%</strong> in Kandy District, Top <strong>0.5%</strong> in Sri Lanka out of 19000+ candidates.
             </li>
             <li>
-              Z-Score: 2.6473 |
+              Z-Score: 2.6473{' '}
+              {' | '}
               <a
                 href="https://drive.google.com/file/d/1wqfz-mxoUZj8fVRHnaHMstwfTZuoYyUw/view?usp=drive_link"
                 target="_blank"
@@ -81,6 +81,19 @@ function Education() {
               <span>Kandy, Sri Lanka</span>
             </div>
           </header>
+          <ul className={styles.bullets}>
+            <li>
+              9 Distinction (A) passes{' '}
+              {' | '}
+              <a
+                href="https://drive.google.com/file/d/1RnqIvzoIhKRyp6ZvdX33z6jo7kcPTqOc/view?usp=drive_link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Result Sheet
+              </a>
+            </li>
+          </ul>
         </article>
 
         <article className={styles.card}>

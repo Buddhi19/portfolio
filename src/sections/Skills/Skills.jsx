@@ -1,42 +1,61 @@
 import styles from './SkillsStyles.module.css';
 import checkMarkIcondark from '../../assets/checkmark-dark.svg';
 import checkMarkIconlight from '../../assets/checkmark-light.svg';
-// import checkMarkIcon from '../../assets/checkmark-dark.svg';
 import SkillList from '../../common/SkillList';
 import { useTheme } from '../../common/ThemeContext';
 
+const GROUPS = [
+  {
+    title: 'Programming Languages',
+    items: ['Python', 'C', 'C++', 'R', 'JavaScript', 'MATLAB'],
+  },
+  {
+    title: 'Web Technologies',
+    items: ['React', 'Node.js', 'HTML5', 'CSS3', 'TypeScript'],
+  },
+  {
+    title: 'Data Science & Machine Learning',
+    items: [
+      'TensorFlow',
+      'PyTorch',
+      'scikit-learn',
+      'NumPy',
+      'pandas',
+      'Matplotlib',
+      'Seaborn',
+      'Jupyter',
+      'OpenCV',
+      'Hugging Face Transformers',
+    ],
+  },
+  {
+    title: 'Version Control',
+    items: ['Git', 'GitHub'],
+  },
+  {
+    title: 'Operating Systems',
+    items: ['Linux', 'Raspbian'],
+  },
+];
+
 function Skills() {
-
-  const { theme, toggleTheme } = useTheme();
-
+  const { theme } = useTheme();
   const checkMarkIcon = theme === 'dark' ? checkMarkIcondark : checkMarkIconlight;
 
   return (
     <section id="skills" className={styles.container}>
       <h1 className="sectionTitle">Skills</h1>
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="PYTHON" />
-        <SkillList src={checkMarkIcon} skill="C/C++" />
-        <SkillList src={checkMarkIcon} skill="JavaScript" />
-        <SkillList src={checkMarkIcon} skill="MATLAB" />
-        {/* <SkillList src={checkMarkIcon} skill="Node" /> */}
-      </div>
-      <hr className={styles.divider} />
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="Altium" />
-        <SkillList src={checkMarkIcon} skill="Webots" />
-        <SkillList src={checkMarkIcon} skill="AutoCad" />
-        <SkillList src={checkMarkIcon} skill="React" />
-        <SkillList src={checkMarkIcon} skill="Revit" />
-        <SkillList src={checkMarkIcon} skill="Jupyter Lab" />
-      </div>
-      <hr className={styles.divider} />
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="sklearn" />
-        <SkillList src={checkMarkIcon} skill="torch" />
-        <SkillList src={checkMarkIcon} skill="tensorflow" />
-        <SkillList src={checkMarkIcon} skill="Git" />
-      </div>
+      {GROUPS.map((group, idx) => (
+        <div key={group.title} className={styles.group}>
+          <h2 className={styles.groupTitle}>{group.title}</h2>
+          <div className={styles.skillList}>
+            {group.items.map((skill) => (
+              <SkillList key={skill} src={checkMarkIcon} skill={skill} />
+            ))}
+          </div>
+          {idx < GROUPS.length - 1 && <hr className={styles.divider} />}
+        </div>
+      ))}
     </section>
   );
 }

@@ -23,6 +23,29 @@
 
 body[data-theme='dark'] .container::before { opacity: 0.22; }
 
+.categoryGroup {
+  width: 100%;
+  max-width: 100ch;
+  margin-top: 2rem;
+}
+
+.categoryGroup:first-of-type {
+  margin-top: 1.6rem;
+}
+
+.categoryTitle {
+  margin: 0 0 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(15, 23, 42, 0.78);
+}
+
+body[data-theme='dark'] .categoryTitle {
+  color: rgba(226, 232, 240, 0.86);
+}
+
 /* List wrapper */
 .list {
   width: 100%;

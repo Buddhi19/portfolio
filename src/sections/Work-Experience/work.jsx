@@ -2,20 +2,52 @@ import styles from './workstyles.module.css';
 
 const EXPERIENCES = [
   {
-    role: 'Embedded Systems Engineer — Intern',
-    company: 'SwartUp (PVT) Limited',
-    date: 'July 2024 – Nov 2024',
+    role: 'Research Assistant',
+    company: 'Multidisciplinary AI Research Centre, University of Peradeniya',
+    location: 'Peradeniya, Sri Lanka',
+    date: 'Nov 2025 – Present',
+    details: [
+      'Working on hallucination mechanisms in large language models.',
+      'Working on remote sensing imagery and semantic change detection.',
+      'Supervisors: Prof. Parakrama Ekanayake, Prof. Roshan Godaliyadda, and Prof. Ranga Kalugampitiya.',
+    ],
   },
   {
     role: 'Teaching Assistant',
-    company: 'University of Peradeniya',
-    date: 'March 2024 – July 2024',
-    summary: 'Assisted delivery for Computer Networking and Programming modules.',
+    company: 'Department of Electrical and Electronic Engineering, University of Peradeniya',
+    location: 'Peradeniya, Sri Lanka',
+    date: 'Aug 2025 – Nov 2025',
+    details: [
+      'Designed and evaluated lab sessions, tutorials, and quizzes for Artificial Intelligence, Machine Learning, and Embedded Systems.',
+    ],
   },
   {
-    role: 'Electrical and Electronic Engineer — Intern',
-    company: 'Vega Innovations',
-    date: 'July 2023 – Oct 2023',
+    role: 'Volunteer Teaching Assistant',
+    company: 'Department of Computer Engineering, University of Peradeniya',
+    location: 'Peradeniya, Sri Lanka',
+    date: 'March 2024 – July 2024',
+    details: [
+      'Designed and evaluated lab sessions in Introduction to Programming and Networking for Electrical Engineering (CO: 253).',
+    ],
+  },
+  {
+    role: 'Embedded System Engineer — Intern',
+    company: 'SwartUp (PVT) Limited',
+    location: 'Remote',
+    date: 'July 2024 – November 2024',
+    details: [
+      'Developed software for a Smart Home system using the Zephyr RTOS.',
+      'Designed and implemented both hardware and embedded software for a Smart City sensor node.',
+    ],
+  },
+  {
+    role: 'Electronic Engineer — Intern',
+    company: 'Vega Innovations (PVT) Limited',
+    location: 'Colombo, Sri Lanka',
+    date: 'July 2023 – October 2023',
+    details: [
+      'Designed and developed a custom meter for measuring electrical conductivity and pH levels, including hardware design and embedded software development.',
+    ],
   },
 ];
 
@@ -33,11 +65,18 @@ function Work() {
                 <div>
                   <h3 className={styles.role}>{exp.role}</h3>
                   <p className={styles.company}>{exp.company}</p>
+                  {exp.location && <p className={styles.location}>{exp.location}</p>}
                 </div>
               </div>
               <span className={styles.date}>{exp.date}</span>
             </header>
-            {exp.summary ? <p className={styles.summary}>{exp.summary}</p> : null}
+            {Array.isArray(exp.details) && exp.details.length > 0 && (
+              <ul className={styles.details}>
+                {exp.details.map((d, i) => (
+                  <li key={i}>{d}</li>
+                ))}
+              </ul>
+            )}
           </article>
         ))}
       </div>

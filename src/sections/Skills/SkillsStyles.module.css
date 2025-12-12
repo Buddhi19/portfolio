@@ -25,6 +25,18 @@
 
 body[data-theme='dark'] .container::before { opacity: 0.22; }
 
+.group {
+  width: min(72ch, 100%);
+}
+
+.groupTitle {
+  margin: 0 0 0.85rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  opacity: 0.9;
+}
+
 .skillList {
   display: flex;
   flex-wrap: wrap;

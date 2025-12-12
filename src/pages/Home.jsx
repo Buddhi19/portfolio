@@ -6,6 +6,7 @@ import Publications from '../sections/Publications/Publications';
 import Work from '../sections/Work-Experience/work';
 import Projects from '../sections/Projects/Projects';
 import Skills from '../sections/Skills/Skills';
+import Extra from '../sections/Extra/Extra';
 import Contact from '../sections/Contact/Contact';
 import Footer from '../sections/Footer/Footer';
 
@@ -20,6 +21,7 @@ function Home() {
       <Work />
       <Projects />
       <Skills />
+      <Extra />
       <Contact />
       <Footer />
     </>
