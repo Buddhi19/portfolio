@@ -55,9 +55,9 @@ function Hero() {
           </a>
         </div>
         <p className={styles.description}>
-          I am a final year Electrical and Electronic Engineering student at the{' '}
-          <a href="https://eng.pdn.ac.lk/" target="_blank" rel="noreferrer">
-            University of Peradeniya
+          I am a Research Assistant at {' '}
+          <a href="https://marcuop.netlify.app/" target="_blank" rel="noreferrer">
+            Multidisciplinary AI Research Centre (MARC)
           </a>
           , Sri Lanka.
         </p>
