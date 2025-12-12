@@ -25,7 +25,7 @@ body[data-theme='dark'] .container::before { opacity: 0.22; }
 
 .categoryGroup {
   width: 100%;
-  max-width: 100ch;
+  max-width: min(1320px, 96vw);
   margin-top: 2rem;
 }
 
@@ -49,13 +49,13 @@ body[data-theme='dark'] .categoryTitle {
 /* List wrapper */
 .list {
   width: 100%;
-  max-width: 100ch;
+  max-width: min(1320px, 96vw);
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
 }
 
 .item { list-style: none; margin: 0; padding: 0; }
@@ -63,7 +63,7 @@ body[data-theme='dark'] .categoryTitle {
 /* Card */
 .card {
   position: relative;
-  padding: 1.3rem 1.6rem 1.3rem 2.8rem;
+  padding: 1.2rem 1.45rem 1.2rem 2.5rem;
   border-radius: 20px;
   background: linear-gradient(135deg, rgba(246, 250, 255, 0.9), rgba(255, 255, 255, 0.8));
   border: 1px solid rgba(9, 135, 242, 0.15);
@@ -87,8 +87,8 @@ body[data-theme='dark'] .card:hover { box-shadow: 0 24px 48px rgba(0, 0, 0, 0.65
 .card::before {
   content: '';
   position: absolute;
-  left: 1.55rem;
-  top: 1.4rem;
+  left: 1.25rem;
+  top: 1.25rem;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -99,9 +99,9 @@ body[data-theme='dark'] .card:hover { box-shadow: 0 24px 48px rgba(0, 0, 0, 0.65
 .card::after {
   content: '';
   position: absolute;
-  left: calc(1.55rem + 3px);
-  top: calc(1.4rem + 11px);
-  bottom: 1.2rem;
+  left: calc(1.25rem + 3px);
+  top: calc(1.25rem + 11px);
+  bottom: 1.1rem;
   width: 2px;
   background: linear-gradient(180deg, rgba(9, 135, 242, 0.34), rgba(9, 135, 242, 0));
   border-radius: 999px;

@@ -6,9 +6,9 @@
   padding: 2rem 1rem;
 }
 
-.group { width: 100%; max-width: 100ch; }
+.group { width: 100%; max-width: min(1320px, 96vw); }
 
-.group + .group { margin-top: 28px; }
+.group + .group { margin-top: 24px; }
 
 .groupTitle {
   margin: 0 0 10px;
@@ -32,7 +32,7 @@
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px 14px;
-  padding: 1rem 1.2rem;
+  padding: 0.95rem 1.05rem;
   border-radius: 16px;
   background: linear-gradient(135deg, rgba(246, 250, 255, 0.92), rgba(255, 255, 255, 0.86));
   border: 1px solid rgba(9, 135, 242, 0.12);
@@ -72,4 +72,3 @@ body[data-theme='dark'] .meta { color: rgba(226,232,240,0.8); }
   .container { padding: 2.2rem 1.15rem; }
   .pubItem { padding: 0.9rem 1rem; border-radius: 14px; }
 }
-

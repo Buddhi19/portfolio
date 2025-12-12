@@ -26,17 +26,17 @@ body[data-theme='dark'] .container::before { opacity: 0.2; }
 /* List wrapper */
 .eduList {
   width: 100%;
-  max-width: 100ch;
+  max-width: min(1320px, 96vw);
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 18px;
   position: relative;
 }
 
 /* Card */
 .card {
   position: relative;
-  padding: 1.25rem 1.6rem 1.4rem 2.8rem;
+  padding: 1.15rem 1.45rem 1.3rem 2.4rem;
   border-radius: 20px;
   border: 1px solid rgba(9, 135, 242, 0.15);
   background: linear-gradient(135deg, rgba(244, 250, 255, 0.95), rgba(255, 255, 255, 0.84));
@@ -60,8 +60,8 @@ body[data-theme='dark'] .card:hover { box-shadow: 0 24px 56px rgba(0, 0, 0, 0.6)
 .card::before {
   content: '';
   position: absolute;
-  left: 1.55rem;
-  top: 1.4rem;
+  left: 1.2rem;
+  top: 1.25rem;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -72,9 +72,9 @@ body[data-theme='dark'] .card:hover { box-shadow: 0 24px 56px rgba(0, 0, 0, 0.6)
 .card::after {
   content: '';
   position: absolute;
-  left: calc(1.55rem + 4px);
-  top: calc(1.4rem + 12px);
-  bottom: 1.4rem;
+  left: calc(1.2rem + 4px);
+  top: calc(1.25rem + 12px);
+  bottom: 1.25rem;
   width: 2px;
   background: linear-gradient(180deg, rgba(9, 135, 242, 0.32), rgba(9, 135, 242, 0));
   border-radius: 999px;
@@ -188,15 +188,15 @@ body[data-theme='dark'] .meta { color: rgba(226, 232, 240, 0.85); }
 @media (max-width: 640px) {
   .container { padding: 2.8rem 1.15rem; }
   .container::before { inset: -60px -20px; }
-  .eduList { row-gap: 16px; }
+  .eduList { row-gap: 14px; }
   .card {
-    padding: 1.1rem 1.2rem 1.25rem 2.1rem;
+    padding: 1rem 1.1rem 1.15rem 1.9rem;
     border-radius: 18px;
   }
-  .card::before { left: 1.2rem; }
+  .card::before { left: 1rem; }
   .card::after {
-    left: calc(1.2rem + 4px);
-    bottom: 1.2rem;
+    left: calc(1rem + 4px);
+    bottom: 1.1rem;
   }
   .header { gap: 0.65rem; }
   .meta { font-size: 0.9rem; }

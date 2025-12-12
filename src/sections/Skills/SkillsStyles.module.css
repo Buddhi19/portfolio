@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.5rem 1.5rem;
+  padding: 3rem 1.4rem 2.6rem;
   text-align: center;
   gap: 2rem;
 }
@@ -25,9 +25,7 @@
 
 body[data-theme='dark'] .container::before { opacity: 0.22; }
 
-.group {
-  width: min(72ch, 100%);
-}
+.group { width: min(1100px, 96vw); }
 
 .groupTitle {
   margin: 0 0 0.85rem;
@@ -41,8 +39,8 @@ body[data-theme='dark'] .container::before { opacity: 0.22; }
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
-  width: min(72ch, 100%);
+  gap: 14px;
+  width: min(1100px, 96vw);
   padding: 0;
   margin: 0;
 }

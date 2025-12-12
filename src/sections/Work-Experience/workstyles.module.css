@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.5rem 1.5rem 3rem;
+  padding: 3rem 1.4rem 2.6rem;
   text-align: center;
 }
 
@@ -26,12 +26,12 @@ body[data-theme='dark'] .container::before { opacity: 0.22; }
 
 /* Timeline */
 .timeline {
-  width: min(88ch, 100%);
+  width: min(1320px, 96vw);
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 18px;
   margin-top: 1rem;
-  padding-left: 2.8rem;
+  padding-left: 2.4rem;
   position: relative;
   text-align: left;
 }
@@ -39,7 +39,7 @@ body[data-theme='dark'] .container::before { opacity: 0.22; }
 .timeline::before {
   content: '';
   position: absolute;
-  left: 1.2rem;
+  left: 1rem;
   top: 0.4rem;
   bottom: 0.4rem;
   width: 2px;
@@ -48,7 +48,7 @@ body[data-theme='dark'] .container::before { opacity: 0.22; }
 
 .card {
   position: relative;
-  padding: 1.3rem 1.6rem 1.4rem;
+  padding: 1.15rem 1.35rem 1.25rem;
   border-radius: 18px;
   background: linear-gradient(135deg, rgba(247, 250, 255, 0.92), rgba(255, 255, 255, 0.82));
   border: 1px solid rgba(9, 135, 242, 0.14);
@@ -142,7 +142,7 @@ body[data-theme='dark'] .details {
 }
 
 @media (width >= 880px) {
-  .timeline { padding-left: 3.2rem; }
+  .timeline { padding-left: 2.7rem; }
   .role { font-size: 1.28rem; }
 }
 

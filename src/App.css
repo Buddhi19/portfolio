@@ -22,7 +22,7 @@ body {
   background: linear-gradient(180deg, rgba(9, 135, 242, 0.08) 0%, rgba(255, 255, 255, 0.92) 35%, rgba(246, 249, 255, 1) 100%);
   display: flex;
   justify-content: center;
-  margin: 0 auto 60px;
+  margin: 0 auto 48px;
   font-family: 'Rubik', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
   transition: background 300ms ease;
   overflow-x: hidden;
@@ -37,7 +37,7 @@ html { scroll-behavior: smooth; }
 #root {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 64px;
   width: 100%;
 }
 
@@ -68,7 +68,7 @@ p {
 }
 
 .sectionTitle {
-  margin-bottom: 36px;
+  margin-bottom: 26px;
   letter-spacing: 0.22em;
 }
 
@@ -78,7 +78,7 @@ p {
 
 @media (width >= 800px) {
   #root {
-    gap: 120px;
+    gap: 84px;
   }
   h1 {
     font-size: 40px;
@@ -92,26 +92,26 @@ p {
   }
 
   .sectionTitle {
-    margin-bottom: 68px;
+    margin-bottom: 46px;
   }
 
   @media (width >= 1400px) {
     #root {
-      gap: 130px;
+      gap: 96px;
     }
     h1 {
       font-size: 48px;
     }
 
     .sectionTitle {
-      margin-bottom: 82px;
+      margin-bottom: 54px;
     }
   }
 }
 
 @media (max-width: 640px) {
-  body { margin-bottom: 48px; }
-  #root { gap: 68px; }
+  body { margin-bottom: 40px; }
+  #root { gap: 52px; }
   h1 { font-size: 30px; }
   h2,
   h3 { font-size: 18px; }
