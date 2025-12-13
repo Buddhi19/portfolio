@@ -28,9 +28,9 @@ function AwardItem({ item }) {
         <div className={styles.left}>
           <h3 className={styles.title}>{item.title}</h3>
           {item.org && <p className={styles.org}>{item.org}</p>}
+          {item.host && <p className={styles.host}>{item.host}</p>}
         </div>
         <div className={styles.meta}>
-          {item.host && <span className={styles.host}>{item.host}</span>}
           {item.date && <span className={styles.date}>{item.date}</span>}
           {!!chips.length && (
             <div className={styles.chips} aria-label="badges">

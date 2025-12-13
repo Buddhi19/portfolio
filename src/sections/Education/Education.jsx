@@ -36,7 +36,7 @@ function Education() {
             </li>
           </ul>
 
-          <a className={styles.link} href="#/courses">View Undergraduate Courses →</a>
+          <a className={styles.link} href="#/academic-record">View Academic Record →</a>
         </article>
 
         <article className={styles.card}>

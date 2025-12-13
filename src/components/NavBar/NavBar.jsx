@@ -41,7 +41,7 @@ function NavBar() {
           <a className={styles.link} href="#work" onClick={(e) => goHomeAndScroll(e, 'work')}>Experience</a>
           <a className={styles.link} href="#projects" onClick={(e) => goHomeAndScroll(e, 'projects')}>Projects</a>
           <a className={styles.link} href="#skills" onClick={(e) => goHomeAndScroll(e, 'skills')}>Skills</a>
-          {/* <a className={styles.link} href="#/courses" onClick={(e) => { e.preventDefault(); setOpen(false); navigate('/courses'); }}>Courses</a> */}
+          {/* <a className={styles.link} href="#/academic-record" onClick={(e) => { e.preventDefault(); setOpen(false); navigate('/academic-record'); }}>Academic Record</a> */}
         </div>
 
         <div className={styles.right}>
@@ -63,7 +63,7 @@ function NavBar() {
         <a className={styles.drawerLink} href="#work" onClick={(e) => goHomeAndScroll(e, 'work')}>Experience</a>
         <a className={styles.drawerLink} href="#projects" onClick={(e) => goHomeAndScroll(e, 'projects')}>Projects</a>
         <a className={styles.drawerLink} href="#skills" onClick={(e) => goHomeAndScroll(e, 'skills')}>Skills</a>
-        <a className={styles.drawerLink} href="#/courses" onClick={(e) => { e.preventDefault(); goHomeAndScroll(e, 'hero'); navigate('/courses'); }}>Courses</a>
+        <a className={styles.drawerLink} href="#/academic-record" onClick={(e) => { e.preventDefault(); goHomeAndScroll(e, 'hero'); navigate('/academic-record'); }}>Academic Record</a>
       </div>
     </nav>
   );
