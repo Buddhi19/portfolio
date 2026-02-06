@@ -25,14 +25,14 @@ const NEWS = [
     tag: 'Award',
     href: '',
   },
-  {
-    id: '2025-10-IEEXTREME',
-    date: '2025-10',
-    title: 'Placed 5th Globally and 1st in Sri Lanka at IEEEXtreme 2025 🎉',
-    summary: 'Our team Insomniacs emerged as Sri Lanka’s No. 1 team for the 3rd consecutive time, and secured 5th place worldwide in the hashtag#IEEEExtreme19 Global Programming Competition, competing among 8,000+ teams from across the globe!.',
-    tag: 'Award',
-    href: '',
-  },
+  // {
+  //   id: '2025-10-IEEXTREME',
+  //   date: '2025-10',
+  //   title: 'Placed 5th Globally and 1st in Sri Lanka at IEEEXtreme 2025 🎉',
+  //   summary: 'Our team Insomniacs emerged as Sri Lanka’s No. 1 team for the 3rd consecutive time, and secured 5th place worldwide in the hashtag#IEEEExtreme19 Global Programming Competition, competing among 8,000+ teams from across the globe!.',
+  //   tag: 'Award',
+  //   href: '',
+  // },
   {
     id: '2025-10-icas',
     date: '2025-10-11',

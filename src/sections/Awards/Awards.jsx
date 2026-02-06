@@ -82,19 +82,19 @@ const CATEGORY_ORDER = [
 ];
 
 const AWARDS = [
-  {
-    category: 'International Programming Contests',
-    title: 'IEEEXtreme 19.0',
-    host: '24-hour global programming competition',
-    date: 'Oct 2025',
-    details: 'Ranked 1st in Sri Lanka, 5th Globally (Team Insomniacs)',
-    links: [
-      {
-        label: 'Award',
-        href: 'https://web2.ee.pdn.ac.lk/events/5th-world-and-1-sri-lanka-global-coding-challenge-ieeextreme-190',
-      },
-    ],
-  },
+  // {
+  //   category: 'International Programming Contests',
+  //   title: 'IEEEXtreme 19.0',
+  //   host: '24-hour global programming competition',
+  //   date: 'Oct 2025',
+  //   details: 'Ranked 1st in Sri Lanka, 5th Globally (Team Insomniacs)',
+  //   links: [
+  //     {
+  //       label: 'Award',
+  //       href: 'https://web2.ee.pdn.ac.lk/events/5th-world-and-1-sri-lanka-global-coding-challenge-ieeextreme-190',
+  //     },
+  //   ],
+  // },
   {
     category: 'International Programming Contests',
     title: 'IEEEXtreme 18.0',
